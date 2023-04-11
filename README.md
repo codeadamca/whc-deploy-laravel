@@ -80,6 +80,8 @@ On the `cPanel` dashboard, find the `Terminal` tool. If you type `ls` you will s
 cd laravel
 ```
 
+![Folder Contents](_readme/screenshot-whc-terminal-content.png)
+
 Run composer:
 
 ```sh
