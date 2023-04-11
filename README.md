@@ -52,6 +52,26 @@ DB_PASSWORD=<DB_PASSWORD>
 > **Note**  
 > If there is a `DB_SOCKET` variable, you can remove this.
 
+## Public App Reference
+
+Using the `File Manager` tool, edit the `/public_html/index.php` file. Change the three file references to include the `laravel` folder. Change this:
+
+```php
+if (file_exists($maintenance = __DIR__.'/../storage/framework/maintenance.php')) {
+    require $maintenance;
+}
+```
+
+To this:
+
+```php
+if (file_exists($maintenance = __DIR__.'/../laravel/storage/framework/maintenance.php')) {
+    require $maintenance;
+}
+```
+
+And make the same change to the other two similar lines of code.
+
 ## Composer and Migrations
 
 On the `cPanel` dashboard, find the `Terminal` tool. If you type `ls` you will see a list of the directory contents. Change the directory to the `laravel` folder:
@@ -66,11 +86,19 @@ Run composer:
 composer install
 ```
 
-And run youe migrations:
+And run your migrations:
 
 ```sh
 php artisan migrate:fresh --seed
 ```
+
+## Test
+
+Open your domain to see if it's working. 
+
+If it's not, turning on `display_errors` will help. Open the `Select PHP Version` tools and the `Options` tab. Check off `display_errors`.
+
+IMAGE - ERRORS
 
 ***
 
