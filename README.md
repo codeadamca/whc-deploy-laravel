@@ -12,29 +12,29 @@ When you register with [WHC](https://whc.ca/) you will receive an email with you
 
 And find your username from logging into `cPanel`:
 
-IMAGE - USERNAME
+![Username](_readme/screenshot-whc-username.png)
 
 ## Database
 
 Using `cPanel` create a new MySQL username and database. And make sure to grant your new user permission to your new database. For now you can give the new MySQL user full premissions to the databae:
 
-IMAGE - PERMISSIONS
+![Database Permissions](_readme/screenshot-whc-permissions.png)
 
 ## FTP
 
 Connect to your hostting account using FTP. The IP address is availble on the right had side of your `cPanel` under `Shared IP Address`. You can use the same username and password from the Registration step:
 
-IMAGE - IP
+![IP Address](_readme/screenshot-whc-ip-address.png)
 
 Once you have connected to your hosting using FTP, navigate to the `public_html` fodler and upload the contents of the `public` folder from your Laravel project. Navigate back to the original folder (`../public_html`) and create a folder named `laravel`. Upload everything to this folder except the `public` and `vendor` folders. 
 
 ## PHP Versions
 
-On the `cPanel` dashboard, find the `Select PHP Version` tool and change the `Current PHP verion` to `PHP 8.11. 
+On the `cPanel` dashboard, find the `Select PHP Version` tool and change the `Current PHP verion` to `PHP 8.1`. 
 
 On the `cPanel` dashboard, find the `MultiPHP Manager` tool and make sure your domain is set to `inherited`. If it isn't, select the checkbox for your domain and choose `inherit` from the drop down. 
 
-IMAGE - inherit
+![Change Password](_readme/screenshot-whc-inherit.png)
 
 ## Environment Variables
 
@@ -98,7 +98,7 @@ Open your domain to see if it's working.
 
 If it's not, turning on `display_errors` will help. Open the `Select PHP Version` tools and the `Options` tab. Check off `display_errors`.
 
-IMAGE - ERRORS
+![PHP display_errors](_readme/screenshot-whc-errors.png)
 
 ***
 
