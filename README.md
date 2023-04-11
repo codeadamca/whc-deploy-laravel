@@ -8,7 +8,7 @@ First register for a shared [WHC](https://whc.ca/) account. I'm using the [Pro s
 
 When you register with [WHC](https://whc.ca/) you will receive an email with your cPanel/FTP username and password. If you don't reaceive this email, you can change your password from the `Client Area`:
 
-IMAGE - CHANGE
+![Change Password](_readme/screenshot-whc-change-password.png)
 
 And find your username from logging into `cPanel`:
 
