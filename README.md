@@ -49,7 +49,7 @@ DB_USERNAME=<DB_USERNAME>
 DB_PASSWORD=<DB_PASSWORD>
 ```
 
-> **Note**  
+> [!Note]  
 > If there is a `DB_SOCKET` variable, you can remove this.
 
 ## Public App Reference
