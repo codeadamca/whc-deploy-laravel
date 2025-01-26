@@ -110,6 +110,7 @@ If it's not, turning on `display_errors` will help. Open the `Select PHP Version
 * [Laravel](https://laravel.com/)
 * [Web Hosting Canada](https://whc.ca/)
 
+<br>
 <a href="https://codeadam.ca">
-<img src="https://codeadam.ca/images/code-block.png" width="100">
+<img src="https://cdn.codeadam.ca/images@1.0.0/codeadam-logo-coloured-horizontal.png" width="200">
 </a>
